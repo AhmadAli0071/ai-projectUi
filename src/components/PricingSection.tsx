@@ -1,16 +1,11 @@
-
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
-
-
 
 const PricingSection = () => {
   return (
-    <section className="py-20 px-6">
-      <div className="container mx-auto px-4 py-12">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+      <div className="container mx-auto">
         {/* Responsive Grid for all 4 Plans */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Pricing Plans */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
           {[
             {
               title: "Starter",
@@ -67,26 +62,26 @@ const PricingSection = () => {
           ].map((plan, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-3xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-shadow duration-300"
             >
-              <h3 className="text-xl font-semibold text-gray-900 mb-1 text-center">
+              <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 text-center">
                 {plan.title}
               </h3>
               <p className="text-sm text-gray-500 mb-6 text-center">{plan.description}</p>
-              <div className="flex justify-center space-x-8 mb-8">
+              <div className="flex justify-center space-x-6 sm:space-x-8 mb-8">
                 <div className="text-center">
-                  <div className="text-[38px] font-extrabold leading-none">{plan.monthly}</div>
+                  <div className="text-[28px] sm:text-[34px] font-extrabold leading-none">{plan.monthly}</div>
                   <div className="text-sm font-normal mt-1">Monthly</div>
                 </div>
-                <div className="text-[38px] font-semibold leading-none">/</div>
+                <div className="text-[28px] sm:text-[34px] font-semibold leading-none">/</div>
                 <div className="text-center">
-                  <div className="text-[24px] font-semibold leading-none mt-4">{plan.annual}</div>
+                  <div className="text-[20px] sm:text-[24px] font-semibold leading-none mt-4">{plan.annual}</div>
                   <div className="text-sm font-normal mt-1">Annual</div>
                 </div>
               </div>
-              <ul className="space-y-5 mb-8">
+              <ul className="space-y-4 sm:space-y-5 mb-8">
                 {plan.features.map(({ label, value }, i) => (
-                  <li key={i} className="flex items-center text-gray-700">
+                  <li key={i} className="flex items-center text-gray-700 text-sm sm:text-base">
                     <span className="flex items-center justify-center w-5 h-5 mr-3 rounded-full bg-black text-white text-xs font-bold">
                       &#10003;
                     </span>
@@ -95,7 +90,7 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] text-white px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300 hover:scale-105 border-none">
+              <Button className="w-full bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] text-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold rounded-md sm:rounded-lg transition-all duration-300 hover:scale-105 border-none">
                 Get Started
               </Button>
             </div>
