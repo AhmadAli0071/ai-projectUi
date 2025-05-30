@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="hidden md:block bg-white border-t border-gray-200 py-12 px-6">
+    <footer className="bg-white border-t border-gray-200 py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Logo and Newsletter */}
@@ -16,18 +16,16 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="font-semibold text-gray-900 mb-3">Subscribe to our newsletter</h3>
-  <div className="flex">
-  <input
-    type="email"
-    placeholder="Enter your email"
-    className="w-52 h-10 px-3 border border-gray-300 rounded-l-md focus:outline-none"
-  />
-  <Button className="h-10 px-4 bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] transition-all duration-300 hover:scale-105 border-none text-white rounded-l-none">
-    Subscribe
-  </Button>
-</div>
-
-
+              <div className="flex flex-col sm:flex-row">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full sm:w-52 h-10 px-3 border border-gray-300 rounded-t-md sm:rounded-l-md sm:rounded-tr-none focus:outline-none"
+                />
+                <Button className="h-10 px-4 bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] transition-all duration-300 hover:scale-105 border-none text-white rounded-b-md sm:rounded-l-none sm:rounded-r-md mt-2 sm:mt-0">
+                  Subscribe
+                </Button>
+              </div>
             </div>
           </div>
 
