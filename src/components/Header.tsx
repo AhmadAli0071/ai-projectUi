@@ -46,16 +46,18 @@ const Header = () => {
           {/* Center: Nav Links */}
           <nav className="flex items-center space-x-8">
             <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-            <Link to="/Pricing" className="text-gray-600 hover:text-gray-900">PV1</Link>
-            <Link to="/pricing2" className="text-gray-600 hover:text-gray-900">PV2</Link>
+            {/* <Link to="/Pricing" className="text-gray-600 hover:text-gray-900">PV1</Link> */}
+            <Link to="/pricing2" className="text-gray-600 hover:text-gray-900">Pricing</Link>
+              <Link to="/compatibility" className="text-gray-600 hover:text-gray-900">Compatibility</Link>
+                <Link to="/" className="text-gray-600 hover:text-gray-900">Product</Link>
             <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            <Link to="/compatibility" className="text-gray-600 hover:text-gray-900">Compatibility</Link>
+          
             <a href="#" className="text-gray-600 hover:text-gray-900">Login</a>
           </nav>
 
-          {/* Right: Search & CTA */}
+          {/* Right:& CTA */}
           <div className="flex items-center space-x-4">
-            <Search className="w-5 h-5 text-gray-400" />
+            
             <Button className="bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] text-white px-6 py-2 rounded-md">
               Sign Up Now
             </Button>
@@ -103,10 +105,7 @@ const Header = () => {
               <X className="w-6 h-6 text-gray-700 cursor-pointer" onClick={() => setTabletDrawerOpen(false)} />
             </div>
 
-            <div className="flex items-center border rounded px-2 py-1 bg-gray-100">
-              <Search className="w-5 h-5 text-gray-400 mr-2" />
-              <input type="text" placeholder="Search..." className="w-full bg-transparent outline-none text-sm" />
-            </div>
+            
 
             <nav className="flex flex-col space-y-4">
               <Link to="/">Home</Link>

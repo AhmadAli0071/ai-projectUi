@@ -48,7 +48,7 @@ const PricingSection = () => {
             },
             {
               title: "Custom",
-              description: "Enterprise / Compliance-focused orgs",
+              description: "Enterprise level/ Compliance Teams",
               monthly: "____",
               annual: "___",
               features: [
@@ -70,18 +70,25 @@ const PricingSection = () => {
               <p className="text-sm text-gray-500 mb-6 text-center">{plan.description}</p>
               <div className="flex justify-center space-x-6 sm:space-x-8 mb-8">
                 <div className="text-center">
-                  <div className="text-[28px] sm:text-[34px] font-extrabold leading-none">{plan.monthly}</div>
+                  <div className="text-[28px] sm:text-[34px] font-extrabold leading-none">
+                    {plan.monthly}
+                  </div>
                   <div className="text-sm font-normal mt-1">Monthly</div>
                 </div>
                 <div className="text-[28px] sm:text-[34px] font-semibold leading-none">/</div>
                 <div className="text-center">
-                  <div className="text-[20px] sm:text-[24px] font-semibold leading-none mt-4">{plan.annual}</div>
+                  <div className="text-[20px] sm:text-[24px] font-semibold leading-none mt-4">
+                    {plan.annual}
+                  </div>
                   <div className="text-sm font-normal mt-1">Annual</div>
                 </div>
               </div>
               <ul className="space-y-4 sm:space-y-5 mb-8">
                 {plan.features.map(({ label, value }, i) => (
-                  <li key={i} className="flex items-center text-gray-700 text-sm sm:text-base">
+                  <li
+                    key={i}
+                    className="flex items-center text-gray-700 text-sm sm:text-base"
+                  >
                     <span className="flex items-center justify-center w-5 h-5 mr-3 rounded-full bg-black text-white text-xs font-bold">
                       &#10003;
                     </span>
@@ -90,7 +97,7 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] text-white px-5 py-3 sm:px-8 sm:py-4 text-sm sm:text-lg font-semibold rounded-md sm:rounded-lg transition-all duration-300 hover:scale-105 border-none">
+              <Button className="w-full bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] text-white py-3 sm:py-4 text-base sm:text-lg font-semibold rounded-xl transition-all duration-300 hover:scale-105 border-none">
                 Get Started
               </Button>
             </div>
