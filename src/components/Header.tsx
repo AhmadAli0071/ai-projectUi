@@ -46,10 +46,10 @@ const Header = () => {
           {/* Center: Nav Links */}
           <nav className="flex items-center space-x-8">
             <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-            {/* <Link to="/Pricing" className="text-gray-600 hover:text-gray-900">PV1</Link> */}
+           
             <Link to="/pricing2" className="text-gray-600 hover:text-gray-900">Pricing</Link>
               <Link to="/compatibility" className="text-gray-600 hover:text-gray-900">Compatibility</Link>
-                <Link to="/" className="text-gray-600 hover:text-gray-900">Product</Link>
+                <Link to="/NotFound" className="text-gray-600 hover:text-gray-900">Product</Link>
             <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
           
             <a href="#" className="text-gray-600 hover:text-gray-900">Login</a>
@@ -79,7 +79,7 @@ const Header = () => {
 
             <nav className="flex flex-col space-y-4">
               <Link to="/">Home</Link>
-              <Link to="/Pricing">PV1</Link>
+              
               <Link to="/pricing2">PV2</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/compatibility">Compatibility</Link>
@@ -109,7 +109,6 @@ const Header = () => {
 
             <nav className="flex flex-col space-y-4">
               <Link to="/">Home</Link>
-              <Link to="/Pricing">PV1</Link>
               <Link to="/pricing2">PV2</Link>
               <Link to="/contact">Contact</Link>
               <Link to="/compatibility">Compatibility</Link>
