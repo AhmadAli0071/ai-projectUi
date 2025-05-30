@@ -10,26 +10,31 @@ const HeroSection = () => {
         backgroundPosition: "center",
       }}
     >
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
 
-      <div className="relative max-w-3xl mx-auto text-center">
-        <h1 className="text-5xl font-extrabold mb-6 leading-tight">
+      {/* Content */}
+      <div className="relative max-w-3xl mx-auto text-center px-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
           Keep Interviews Human. Keep Hiring Fair.
         </h1>
 
+        {/* Logo */}
         <div className="flex items-center justify-center mb-5">
           <img
             src="/Hero/VectorHero.png"
             alt="GenuineHire Logo"
-            className="h-20 w-auto"
+            className="h-14 w-auto sm:h-16 md:h-20"
           />
         </div>
 
-        <p className="text-2xl mb-8 font-medium">
+        {/* Subheading */}
+        <p className="text-lg sm:text-xl md:text-2xl mb-8 font-medium">
           Level The Interview Playing Field
         </p>
 
-        <Button className="bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] transition-all duration-300 hover:scale-105 border-none text-white px-10 py-6 rounded-2xl text-xl font-semibold">
+        {/* CTA Button */}
+        <Button className="bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] transition-all duration-300 hover:scale-105 border-none text-white px-6 py-4 sm:px-8 sm:py-5 md:px-10 md:py-6 rounded-2xl text-base sm:text-lg md:text-xl font-semibold">
           Get Started
         </Button>
       </div>
