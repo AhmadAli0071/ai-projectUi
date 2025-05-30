@@ -47,11 +47,10 @@ const Header = () => {
           <nav className="flex items-center space-x-8">
             <Link to="/" className="text-gray-600 hover:text-gray-900">Home</Link>
             <Link to="/pricing2" className="text-gray-600 hover:text-gray-900">Pricing</Link>
-              <Link to="/compatibility" className="text-gray-600 hover:text-gray-900">Compatibility</Link>
-                <Link to="/NotFound" className="text-gray-600 hover:text-gray-900">Product</Link>
+              <Link to="/compatibility" className="text-gray-600 hover:text-gray-900">Product</Link>
             <Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
           
-            <a href="#" className="text-gray-600 hover:text-gray-900">Login</a>
+            <a href="/NotFound" className="text-gray-600 hover:text-gray-900">Login</a>
           </nav>
 
           {/* Right:& CTA */}
@@ -79,10 +78,10 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <Link to="/">Home</Link>
               <Link to="/Pricing2">Pricing</Link>
-              <Link to="/compatibility">Compatibility</Link>
-              <Link to="/NotFound">Product</Link>
+              <Link to="/compatibility">Product</Link>
+              
               <Link to="/contact">Contact</Link>
-              <a href="#">Login</a>
+              <a href="/NotFound">Login</a>
             </nav>
 
             <Button className="w-full mt-4 bg-[linear-gradient(to_right,#2a7eb1,#0cc1c7)] text-white px-4 py-2 rounded-md">
@@ -109,10 +108,9 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
              <Link to="/">Home</Link>
               <Link to="/Pricing2">Pricing</Link>
-              <Link to="/compatibility">Compatibility</Link>
-              <Link to="/NotFound">Product</Link>
+              <Link to="/compatibility">Product</Link>
               <Link to="/contact">Contact</Link>
-             <a href="#">Login</a>
+             <a href="/NotFound">Login</a>
             </nav>
           </div>
         </div>
