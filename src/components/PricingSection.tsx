@@ -8,16 +8,16 @@ const PricingSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
           {[
             {
-              title: "Starter",
+               title: "Starter",
               description: "For Solo recruiters / Early Startups",
               monthly: "$14.9",
               annual: "$149",
               features: [
-                { label: "Users", value: "1" },
-                { label: "AI Analysis Screenings", value: "5" },
-                { label: "Add user", value: "$5" },
-                { label: "Over 5 100 Interviews", value: "$10k" },
-                { label: "Change Plan Anytime", value: "✓" },
+                { label: "Seats", value: "1" },
+                { label: "AI Analytics (Monthly)", value: "30" },
+                { label: "Add seat", value: "$4" },
+                { label: "Seat + 30 interview", value: "$7,50" },
+                { label: "Overage Per Interview", value: "$1" },
               ],
             },
             {
@@ -26,24 +26,24 @@ const PricingSection = () => {
               monthly: "$49.9",
               annual: "$499",
               features: [
-                { label: "Users", value: "5" },
-                { label: "AI Analysis Screenings", value: "50" },
-                { label: "Add user", value: "$8" },
-                { label: "Over 5 100 Interviews", value: "$8" },
-                { label: "Change Plan Anytime", value: "✓" },
+                { label: "Seats", value: "3" },
+                { label: "AI Analytics (Monthly)", value: "150" },
+                { label: "Add seat", value: "$5" },
+                { label: "Seat + 50 interview", value: "$9" },
+                { label: "Overage Per Interview", value: "$0,8" },
               ],
             },
             {
               title: "Scale",
               description: "High-volume hiring / Lean teams",
               monthly: "$119.9",
-              annual: "$1199",
+              annual: "$1,199",
               features: [
-                { label: "Users", value: "25" },
-                { label: "AI Analysis Screenings", value: "500" },
-                { label: "Add user", value: "$5" },
-                { label: "Over 5 100 Interviews", value: "$5" },
-                { label: "Change Plan Anytime", value: "✓" },
+                { label: "Seats", value: "5" },
+                { label: "AI Analytics (Monthly)", value: "500" },
+                { label: "Add seat", value: "$6" },
+                { label: "Seat + 100 interview", value: "$10" },
+                { label: "Overage Per Interview", value: "$0,5" },
               ],
             },
             {
