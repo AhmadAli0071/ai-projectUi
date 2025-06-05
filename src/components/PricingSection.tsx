@@ -10,7 +10,7 @@ const PricingSection = () => {
             {
                title: "Starter",
               description: "For Solo recruiters / Early Startups",
-              monthly: "$14.9",
+              monthly: "$14,9",
               annual: "$149",
               features: [
                 { label: "Seats", value: "1" },
@@ -23,7 +23,7 @@ const PricingSection = () => {
             {
               title: "Growth",
               description: "Startup teams / Boutique agencies",
-              monthly: "$49.9",
+              monthly: "$49,9",
               annual: "$499",
               features: [
                 { label: "Seats", value: "3" },
@@ -36,7 +36,7 @@ const PricingSection = () => {
             {
               title: "Scale",
               description: "High-volume hiring / Lean teams",
-              monthly: "$119.9",
+              monthly: "$119,9",
               annual: "$1,199",
               features: [
                 { label: "Seats", value: "5" },
